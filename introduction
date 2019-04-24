@@ -14,10 +14,13 @@ C语言为机构化程序提供了基本的流控制结构：声明分组、决�
 
 
 Functions may return values of basic types, structures, unions, or pointers. Any function may be called recursively. Local variables are typically ``automatic'', or created anew with each invocation. Function definitions may not be nested but variables may be declared in a block-structured fashion. The functions of a C program may exist in separate source files that are compiled separately. Variables may be internal to a function, external but known only within a single source file, or visible to the entire program. 
+函数可以返基础类型、结构、联合和指针的值。所有函数都可以递归调用。本地变量可以是典型的“自动型”，或者可以在每一次引用中创建一个新的。函数的定义可以不是内嵌的，不过，变量的声明可以在一个结构中完成。C程序的函数可以以独立的源文件保存，它可以分开编译。变量可以是一个函数内部的，也可以是一个源文件的，也可以对整个程序可见。
 
 A preprocessing step performs macro substitution on program text, inclusion of other source files, and conditional compilation. 
+预处理阶段执行程序文本的宏替换内容、包含的其它源文件和条件编译。
 
 C is a relatively ``low-level'' language. This characterization is not pejorative; it simply means that C deals with the same sort of objects that most computers do, namely characters, numbers, and addresses. These may be combined and moved about with the arithmetic and logical operators implemented by real machines. 
+C语言是相对“低级”的语言，这样表示并没有贬义；这么说的意思是C语言可以处理大部分计算机能处理的对象，如字符、数字、地址等。这些是被真实机器的逻辑操作器和算法操作和移动的。
 
 C provides no operations to deal directly with composite objects such as character strings, sets, lists or arrays. There are no operations that manipulate an entire array or string, although structures may be copied as a unit. The language does not define any storage allocation facility other than static definition and the stack discipline provided by the local variables of functions; there is no heap or garbage collection. Finally, C itself provides no input/output facilities; there are no READ or WRITE statements, and no built-in file access methods. All of these higher-level mechanisms must be provided by explicitly called functions. Most C implementations have included a reasonably standard collection of such functions. 
 
