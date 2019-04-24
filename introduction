@@ -10,6 +10,8 @@ BCPL and B are ``typeless'' languages. By contrast, C provides a variety of data
 BCPL和B语言是“无类型”语言，与之相对，C语言提供了多种数据类型。基础的类型是字符、整数和不同尺寸的浮点数。另外还提供了使用指针、数组、结构、联合创建的分层衍生数据类型。操作者和操作对象可以定义表达，任何表达包括分配或函数调用，都可以由一个声明完成。指针可以进行机器独立的地址算法操作
 
 C provides the fundamental control-flow constructions required for well-structured programs: statement grouping, decision making (if-else), selecting one of a set of possible values (switch), looping with the termination test at the top (while, for) or at the bottom (do), and early loop exit (break). 
+C语言为机构化程序提供了基本的流控制结构：声明分组、决定制定（if-else）、从多个可能值中选择一个（switch）、在顶部有终止测试的循环（while, for）或在底部（do），还有直接退出循环（break）。
+
 
 Functions may return values of basic types, structures, unions, or pointers. Any function may be called recursively. Local variables are typically ``automatic'', or created anew with each invocation. Function definitions may not be nested but variables may be declared in a block-structured fashion. The functions of a C program may exist in separate source files that are compiled separately. Variables may be internal to a function, external but known only within a single source file, or visible to the entire program. 
 
