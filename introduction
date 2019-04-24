@@ -23,6 +23,8 @@ C is a relatively ``low-level'' language. This characterization is not pejorativ
 C语言是相对“低级”的语言，这样表示并没有贬义；这么说的意思是C语言可以处理大部分计算机能处理的对象，如字符、数字、地址等。这些是被真实机器的逻辑操作器和算法操作和移动的。
 
 C provides no operations to deal directly with composite objects such as character strings, sets, lists or arrays. There are no operations that manipulate an entire array or string, although structures may be copied as a unit. The language does not define any storage allocation facility other than static definition and the stack discipline provided by the local variables of functions; there is no heap or garbage collection. Finally, C itself provides no input/output facilities; there are no READ or WRITE statements, and no built-in file access methods. All of these higher-level mechanisms must be provided by explicitly called functions. Most C implementations have included a reasonably standard collection of such functions. 
+C语言不直接操作组合对象，如：字符串、集合、列表或数组。没有操作码可以控制一个数组或字符，不过结构可以作为一个单位被拷贝。本语言不定义任何存储分配设备，除了静态定义和函数本地变量提供的栈规则；没有二叉堆（heap）或垃圾收集。最后，C语言本身不提供输入/输出设备；没有读或写声明；没有内置文件访问入口。所有这些高级机制都由函数调用完成，大部分的C程序都包含了这样一些函数的标准集合。
+
 
 Similarly, C offers only straightforward, single-thread control flow: tests, loops, grouping, and subprograms, but not multiprogramming, parallel operations, synchronization, or coroutines. 
 
