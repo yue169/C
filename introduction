@@ -27,6 +27,7 @@ C语言不直接操作组合对象，如：字符串、集合、列表或数组�
 
 
 Similarly, C offers only straightforward, single-thread control flow: tests, loops, grouping, and subprograms, but not multiprogramming, parallel operations, synchronization, or coroutines. 
+相似地，C语言只提供直接的单线程的控制流：测试、循环、分组和子程序，没有多程序、并行操作、同步和并发。
 
 Although the absence of some of these features may seem like a grave deficiency, (``You mean I have to call a function to compare two character strings?''), keeping the language down to modest size has real benefits. Since C is relatively small, it can be described in small space, and learned quickly. A programmer can reasonably expect to know and understand and indeed regularly use the entire language. 
 
