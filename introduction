@@ -30,14 +30,19 @@ Similarly, C offers only straightforward, single-thread control flow: tests, loo
 相似地，C语言只提供直接的单线程的控制流：测试、循环、分组和子程序，没有多程序、并行操作、同步和并发。
 
 Although the absence of some of these features may seem like a grave deficiency, (``You mean I have to call a function to compare two character strings?''), keeping the language down to modest size has real benefits. Since C is relatively small, it can be described in small space, and learned quickly. A programmer can reasonably expect to know and understand and indeed regularly use the entire language. 
+缺少这些功能似乎看起来是个重大不足，（“你的意思是我必须调用一个函数来兑比两个字符串？”），不过保持语言的小型化有实实在在的好处，C是个很小的语言，它可以用在很小的地方，而且学起来很容易上手。一个程序员可以理解并使用这个语言的全部。
 
 For many years, the definition of C was the reference manual in the first edition of The C Programming Language. In 1983, the American National Standards Institute (ANSI) established a committee to provide a modern, comprehensive definition of C. The resulting definition, the ANSI standard, or ``ANSI C'', was completed in late 1988. Most of the features of the standard are already supported by modern compilers. 
+多年来，C语言是由<C程序语言>第一版种的参考手册定义的。在1983年，美国国家标准组织（ANSI）成立了一个委员定义了一个现代、综合的C语言的定义。最终的标准C语言也就是ANSI C在1988年完成。这个标准中的大部分特征已经被现在的编译器所支持。
 
 The standard is based on the original reference manual. The language is relatively little changed; one of the goals of the standard was to make sure that most existing programs would remain valid, or, failing that, that compilers could produce warnings of new behavior. 
+这个标准基于原始参考手册。该语言变动的比较少；这个标准的目标之一就是确保大部分的现存程序可以正常有效，或者对新行为产生的无效做出警告。
 
 For most programmers, the most important change is the new syntax for declaring and defining functions. A function declaration can now include a description of the arguments of the function; the definition syntax changes to match. This extra information makes it much easier for compilers to detect errors caused by mismatched arguments; in our experience, it is a very useful addition to the language. 
+对于大部分的程序员来说，最大的改变是函数的定义和声明的语法。现在函数的声明可以包含这个函数的参数的描述；定义语法的改变与此一致。这个添加的信息让编译器更容易侦测到不匹配参数所导致的错误；以我们的经验来看，这是对编程语言是非常有用的。
 
 There are other small-scale language changes. Structure assignment and enumerations, which had been widely available, are now officially part of the language. Floating-point computations may now be done in single precision. The properties of arithmetic, especially for unsigned types, are clarified. The preprocessor is more elaborate. Most of these changes will have only minor effects on most programmers. 
+
 
 A second significant contribution of the standard is the definition of a library to accompany C. It specifies functions for accessing the operating system (for instance, to read and write files), formatted input and output, memory allocation, string manipulation, and the like. A collection of standard headers provides uniform access to declarations of functions in data types. Programs that use this library to interact with a host system are assured of compatible behavior. Most of the library is closely modeled on the ``standard I/O library'' of the UNIX system. This library was described in the first edition, and has been widely used on other systems as well. Again, most programmers will not see much change. 
 
