@@ -42,7 +42,7 @@ For most programmers, the most important change is the new syntax for declaring 
 对于大部分的程序员来说，最大的改变是函数的定义和声明的语法。现在函数的声明可以包含这个函数的参数的描述；定义语法的改变与此一致。这个添加的信息让编译器更容易侦测到不匹配参数所导致的错误；以我们的经验来看，这是对编程语言是非常有用的。
 
 There are other small-scale language changes. Structure assignment and enumerations, which had been widely available, are now officially part of the language. Floating-point computations may now be done in single precision. The properties of arithmetic, especially for unsigned types, are clarified. The preprocessor is more elaborate. Most of these changes will have only minor effects on most programmers. 
-
+还有一些小规模的语言改变。结构分配和枚举，已经广泛使用，现在正式成为这个语言的一部分。浮点计算也可以用单精度进行。计算方面的内容，尤其是未分配类型被澄清。预处理更精良。这些改变对大部分程序员来说影响都是最小化的。
 
 A second significant contribution of the standard is the definition of a library to accompany C. It specifies functions for accessing the operating system (for instance, to read and write files), formatted input and output, memory allocation, string manipulation, and the like. A collection of standard headers provides uniform access to declarations of functions in data types. Programs that use this library to interact with a host system are assured of compatible behavior. Most of the library is closely modeled on the ``standard I/O library'' of the UNIX system. This library was described in the first edition, and has been widely used on other systems as well. Again, most programmers will not see much change. 
 
