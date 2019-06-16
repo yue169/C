@@ -45,6 +45,7 @@ There are other small-scale language changes. Structure assignment and enumerati
 还有一些小规模的语言改变。结构分配和枚举，已经广泛使用，现在正式成为这个语言的一部分。浮点计算也可以用单精度进行。计算方面的内容，尤其是未分配类型被澄清。预处理更精良。这些改变对大部分程序员来说影响都是最小化的。
 
 A second significant contribution of the standard is the definition of a library to accompany C. It specifies functions for accessing the operating system (for instance, to read and write files), formatted input and output, memory allocation, string manipulation, and the like. A collection of standard headers provides uniform access to declarations of functions in data types. Programs that use this library to interact with a host system are assured of compatible behavior. Most of the library is closely modeled on the ``standard I/O library'' of the UNIX system. This library was described in the first edition, and has been widely used on other systems as well. Again, most programmers will not see much change. 
+这个标准第二大变化就是C语言的标准库的定义。他定制了访问操作系统的函数（例如，读和写文件），格式化输入和输出，内存分配，字符串的操作，等等类似的功能函数。一撮标准头文件为函数声明中的数据类型提供了统一的入口。
 
 Because the data types and control structures provided by C are supported directly by most computers, the run-time library required to implement self-contained programs is tiny. The standard library functions are only called explicitly, so they can be avoided if they are not needed. Most can be written in C, and except for the operating system details they conceal, are themselves portable. 
 
